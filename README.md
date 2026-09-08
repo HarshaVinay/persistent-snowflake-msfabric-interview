@@ -1,26 +1,58 @@
-# Persistent Snowflake_MSFabric Interview Preparation
+# Persistent Snowflake_MSFabric Interview Handbook
 
-A structured, evidence-based preparation repository for the Revature → Persistent Systems client interview.
+A curriculum-first, evidence-labelled interview handbook for the Revature → Persistent Systems Data Engineering / Snowflake_MSFabric client interview.
 
-## Authoritative syllabus
-The user's latest curriculum is the source of truth. It covers SDLC/Git, Python, Pandas/NumPy/Pytest, SQL/RDBMS, database programming, cloud fundamentals, data engineering, Spark/PySpark/Scala, Spark streaming, Snowflake, Snowpark, dbt, Snowflake security/orchestration, Microsoft Fabric, OneLake, Lakehouse, Fabric Data Factory, Warehouse/T-SQL, Power BI, governance and CI/CD.
+## Ground truth
+1. The user's latest pasted **Revature Persistent SnowFlake MsFabric curriculum** is the authoritative syllabus.
+2. User projects are first-class preparation material:
+   - Disaster Affected Region Tracker: https://github.com/HarshaVinay/Disaster-Affected-Region-Tracker-Analysis
+   - Cricket Analytics Data Engineering: https://github.com/HarshaVinay/cricket-analytics-data-engineering
+3. Public candidate reports are evidence, not guarantees.
+4. Current vendor documentation is used for technical facts that can change.
 
 ## Evidence labels
-- **A — Verified/directly reported:** candidate explicitly reported the question.
-- **B — Reported, experienced-level:** reported at Persistent but mainly from experienced candidates.
-- **C — High-probability prediction:** strong overlap with the curriculum, Persistent role requirements and recurring interview patterns, but not confirmed as asked.
-- **D — General preparation:** useful general knowledge without Persistent-specific evidence.
+- **A — Directly reported:** candidate explicitly reports being asked.
+- **B — Reported, experienced level:** reported at Persistent but from non-fresher/advanced interviews.
+- **C — High-probability:** strong overlap of curriculum + Persistent role/interview patterns, not confirmed.
+- **D — General:** useful preparation without Persistent-specific evidence.
 
-Never present C/D as confirmed interview questions.
+## Priority
+### P0
+SQL, Python coding, Spark/PySpark, Snowflake, ETL/ELT, dimensional modeling/SCD, project defence, Fabric/OneLake/Lakehouse, Azure/ADF.
 
-## Projects
-- Disaster Affected Region Tracker Analysis: https://github.com/HarshaVinay/Disaster-Affected-Region-Tracker-Analysis
-- Cricket Analytics Data Engineering: https://github.com/HarshaVinay/cricket-analytics-data-engineering
+### P1
+dbt, streaming, security/governance, Airflow, Delta Lake, Power BI, Scala.
 
-## Research principle
-Every topic is analyzed through three lenses:
-1. Your actual curriculum.
-2. Persistent interview evidence.
-3. Your actual project implementation.
+### P2
+Deep internals and obscure features unless they appear in the curriculum/project or a reported scenario.
 
-The goal is not to memorize generic questions. The goal is to build defensible interview answers, coding ability, scenario reasoning, and project depth.
+## Handbook map
+- `00_MASTER` — strategy, curriculum map, readiness
+- `01_PERSISTENT_RESEARCH` — source and evidence analysis
+- `02_SQL` — SQL concepts/coding/scenarios
+- `03_PYTHON` — Python coding and foundations
+- `04_PANDAS_NUMPY_PYTEST` — data wrangling/testing
+- `05_DATA_ENGINEERING` — architecture/modeling/ETL
+- `06_SPARK` — engine and optimization
+- `07_PYSPARK` — practical coding
+- `08_SCALA` — curriculum coverage
+- `09_SNOWFLAKE` — specialization core
+- `10_DBT` — transformation engineering
+- `11_AZURE` — cloud/ADF/ADLS
+- `12_MICROSOFT_FABRIC` — Fabric specialization
+- `13_AIRFLOW` — orchestration support
+- `14_BIGQUERY` — curriculum support
+- `15_PROJECTS` — project defence
+- `16_SCENARIOS` — troubleshooting/design
+- `17_CODING` — coding practice
+- `18_FINAL_INTERVIEW` — final simulation
+
+## Current evidence
+A recent Persistent Data Engineer guide reports coding in Python/PySpark/advanced SQL plus Snowflake zero-copy cloning, ADF, Medallion Architecture, PII handling, pipeline recovery and Spark/PySpark optimization. citeturn567821search0
+
+A 2026 Persistent Glassdoor report for a Revature route states the final Persistent stage was focused on training, resume, coding, SQL and technical discussion. citeturn567821search6
+
+Current Microsoft Fabric documentation confirms OneLake as the unified logical data lake, Lakehouse/Delta/Spark/SQL integration, and current OneLake/Direct Lake security behavior. citeturn969057search8turn969057search0turn785498search1
+
+## Working rule
+For every topic, prepare: **definition → why → example → coding → performance/security → scenario → project connection → follow-up.**
