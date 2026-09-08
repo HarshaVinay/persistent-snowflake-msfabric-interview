@@ -1,58 +1,121 @@
 # Persistent Snowflake_MSFabric Interview Handbook
 
-A curriculum-first, evidence-labelled interview handbook for the Revature → Persistent Systems Data Engineering / Snowflake_MSFabric client interview.
+> **Revature → Persistent Systems | Data Engineering / Snowflake_MSFabric**
+>
+> Curriculum-first • Evidence-labelled • Project-driven • Interview-ready
 
-## Ground truth
-1. The user's latest pasted **Revature Persistent SnowFlake MsFabric curriculum** is the authoritative syllabus.
-2. User projects are first-class preparation material:
-   - Disaster Affected Region Tracker: https://github.com/HarshaVinay/Disaster-Affected-Region-Tracker-Analysis
-   - Cricket Analytics Data Engineering: https://github.com/HarshaVinay/cricket-analytics-data-engineering
-3. Public candidate reports are evidence, not guarantees.
-4. Current vendor documentation is used for technical facts that can change.
+## Mission
+
+This repository is the single preparation workspace for the Persistent client interview. It combines the user's **exact Revature Persistent SnowFlake MsFabric curriculum**, public Persistent interview evidence, current Snowflake/Fabric documentation, previous training notes, and the user's real projects.
+
+The goal is not to collect random interview questions. The goal is to build answers that survive technical follow-ups, coding exercises, project cross-examination, and architecture scenarios.
+
+## Source of truth
+
+1. **Authoritative syllabus:** the user's latest pasted Revature Persistent SnowFlake MsFabric curriculum.
+2. **Primary project evidence:**
+   - [Disaster Affected Region Tracker](https://github.com/HarshaVinay/Disaster-Affected-Region-Tracker-Analysis)
+   - [Cricket Analytics Data Engineering](https://github.com/HarshaVinay/cricket-analytics-data-engineering)
+3. **Interview evidence:** candidate reports and current Persistent role signals.
+4. **Technical truth for changing platforms:** official Snowflake and Microsoft documentation.
 
 ## Evidence labels
-- **A — Directly reported:** candidate explicitly reports being asked.
-- **B — Reported, experienced level:** reported at Persistent but from non-fresher/advanced interviews.
-- **C — High-probability:** strong overlap of curriculum + Persistent role/interview patterns, not confirmed.
-- **D — General:** useful preparation without Persistent-specific evidence.
 
-## Priority
-### P0
-SQL, Python coding, Spark/PySpark, Snowflake, ETL/ELT, dimensional modeling/SCD, project defence, Fabric/OneLake/Lakehouse, Azure/ADF.
+| Label | Meaning |
+|---|---|
+| **A** | Directly reported Persistent interview question/context |
+| **B** | Reported Persistent question, mainly from experienced candidates |
+| **C** | High-probability prediction from curriculum + role/interview overlap |
+| **D** | General interview preparation without Persistent-specific evidence |
 
-### P1
-dbt, streaming, security/governance, Airflow, Delta Lake, Power BI, Scala.
+**Rule:** C/D material must never be presented as a confirmed Persistent question.
 
-### P2
-Deep internals and obscure features unless they appear in the curriculum/project or a reported scenario.
+## Priority model
 
-## Handbook map
-- `00_MASTER` — strategy, curriculum map, readiness
-- `01_PERSISTENT_RESEARCH` — source and evidence analysis
-- `02_SQL` — SQL concepts/coding/scenarios
-- `03_PYTHON` — Python coding and foundations
-- `04_PANDAS_NUMPY_PYTEST` — data wrangling/testing
-- `05_DATA_ENGINEERING` — architecture/modeling/ETL
-- `06_SPARK` — engine and optimization
-- `07_PYSPARK` — practical coding
-- `08_SCALA` — curriculum coverage
-- `09_SNOWFLAKE` — specialization core
-- `10_DBT` — transformation engineering
-- `11_AZURE` — cloud/ADF/ADLS
-- `12_MICROSOFT_FABRIC` — Fabric specialization
-- `13_AIRFLOW` — orchestration support
-- `14_BIGQUERY` — curriculum support
-- `15_PROJECTS` — project defence
-- `16_SCENARIOS` — troubleshooting/design
-- `17_CODING` — coding practice
-- `18_FINAL_INTERVIEW` — final simulation
+### P0 — Know cold
+SQL • Python coding • Spark/PySpark • Snowflake • ETL/ELT • data modeling/SCD • project defence • Fabric/OneLake/Lakehouse • Azure/ADF
 
-## Current evidence
-A recent Persistent Data Engineer guide reports coding in Python/PySpark/advanced SQL plus Snowflake zero-copy cloning, ADF, Medallion Architecture, PII handling, pipeline recovery and Spark/PySpark optimization. citeturn567821search0
+### P1 — Important
+DBT • streaming • security/governance • Delta Lake • Power BI • Scala • orchestration/Airflow
 
-A 2026 Persistent Glassdoor report for a Revature route states the final Persistent stage was focused on training, resume, coding, SQL and technical discussion. citeturn567821search6
+### P2 — Supporting
+Obscure internals, low-frequency features and vendor details that are not strongly supported by the syllabus, project or evidence.
 
-Current Microsoft Fabric documentation confirms OneLake as the unified logical data lake, Lakehouse/Delta/Spark/SQL integration, and current OneLake/Direct Lake security behavior. citeturn969057search8turn969057search0turn785498search1
+## Handbook structure
 
-## Working rule
-For every topic, prepare: **definition → why → example → coding → performance/security → scenario → project connection → follow-up.**
+| Section | Purpose |
+|---|---|
+| `00_MASTER` | Scope, audit, study order, writing/evidence standards |
+| `01_PERSISTENT_RESEARCH` | Interview evidence and source register |
+| `02_SQL` | SQL fundamentals, analytics, coding and optimization |
+| `03_PYTHON` | Python foundations and interview coding |
+| `04_PANDAS_NUMPY_PYTEST` | Data wrangling and testing |
+| `05_DATA_ENGINEERING` | ETL/ELT, architecture, modeling, SCD, CDC |
+| `06_SPARK` | Spark engine, execution and optimization |
+| `07_PYSPARK` | Practical DataFrame/JSON/join/window coding |
+| `08_SCALA` | Scala curriculum and interview coverage |
+| `09_SNOWFLAKE` | Snowflake specialization |
+| `10_DBT` | dbt + Snowflake transformation engineering |
+| `11_AZURE` | Azure/ADLS/ADF concepts |
+| `12_MICROSOFT_FABRIC` | Fabric/OneLake/Lakehouse/Warehouse/BI |
+| `13_AIRFLOW` | Orchestration support |
+| `14_BIGQUERY` | Cloud warehouse support |
+| `15_PROJECTS` | Project implementation and defence |
+| `16_SCENARIOS` | Troubleshooting and architecture |
+| `17_CODING` | Dedicated coding practice |
+| `18_FINAL_INTERVIEW` | Final revision and mock interviews |
+
+## Canonical workflow
+
+```text
+Curriculum
+   ↓
+Persistent evidence
+   ↓
+Technical verification
+   ↓
+Concept + mental model
+   ↓
+Coding / implementation
+   ↓
+Scenario / troubleshooting
+   ↓
+Project connection
+   ↓
+Follow-up questions
+   ↓
+Mock interview
+```
+
+## Research discipline
+
+Public interview posts are anecdotal and can vary by role, client, seniority and date. Use repeated patterns rather than isolated claims. Current vendor documentation takes precedence for product behavior that changes over time.
+
+### Current platform references
+- [Snowflake micro-partitions and clustering](https://docs.snowflake.com/en/user-guide/tables-clustering-micropartitions)
+- [Snowflake Time Travel and Fail-safe](https://docs.snowflake.com/en/user-guide/data-availability)
+- [Snowflake cloning](https://docs.snowflake.com/en/user-guide/object-clone)
+- [Microsoft OneLake](https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview)
+- [Microsoft Fabric Lakehouse](https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-overview)
+- [Direct Lake security](https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-security-integration)
+- [OneLake security](https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security)
+
+## Interview answer standard
+
+For concepts:
+**definition → mechanism → example → when/why**
+
+For comparisons:
+**dimension → option A → option B → trade-off → selection rule**
+
+For coding:
+**clarify → implement → edge cases → complexity → explain aloud**
+
+For scenarios:
+**requirements → volume/SLA → design → quality → failure recovery → security → monitoring → cost/performance**
+
+## Status
+
+This is an actively maintained preparation handbook. The detailed audit and source register explain what is confirmed, what is predicted, and where further depth is required.
+
+**Last audited:** 2026-09-09
